@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 10:35:38 AM"/>
+        <attribute name="created" value="SFA7VEFLSVRBQ0hJQkFOQTsyMDIzLTAzLTI1OzEwOjMzOjAzIEFNOzIzNDA="/>
+        <attribute name="edited" value="SFA7VEFLSVRBQ0hJQkFOQTsyMDIzLTAzLTI1OzEwOjM1OjM4IEFNOzE7MjQ1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="max, i" type="Integer" array="False" size=""/>
+            <assign variable="max" expression="0"/>
+            <for variable="i" start="1" end="100" direction="inc" step="1">
+                <if expression="i &lt;= 100">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <if expression="i &gt; max">
+                            <then>
+                                <assign variable="max" expression="i"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Nilai terbesar adalah &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
